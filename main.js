@@ -18,6 +18,29 @@ let person3 = {
     }]
 }
 
+let favFoods = (obj) => {
+    for(let i = 0; i < Object.keys(obj).length; i++) {
+        if(Array.isArray(Object.values(obj)[i])) {
+            for(let j = 0; j < Object.values(obj)[i].length; j++) {
+                console.log(Object.values(obj)[i][j]);
+            }
+        } else if(typeof Object.values(obj)[i] === "object") {
+            for(let j = 0; j < Object.values(obj)[i].length; j++) {
+                console.log(Object.values(obj)[i][j]);
+            }
+        } else {
+            console.log(Object.values(obj)[i]);
+        }
+    }
+}
+favFoods(person3)
+
+function favoriteFood() { for (let i = 0; i<person3.length; i++){
+    console.log(vals[i])( vals = Object.values(person3))
+
+}
+}
+console.log(person3)
 
 
 //=======Exercise #2=========//
